@@ -532,8 +532,9 @@
         },
 
         playSound: function (file, loop) {
-            var url = 'res/snd/' + file + (this.game.canPlayOgg() ? '.ogg' : '.mp3');
-            return this.game.playSound(url, loop);
+            //var url = 'res/snd/' + file + (this.game.canPlayOgg() ? '.ogg' : '.mp3');
+            //return this.game.playSound(url, loop);
+            return this.game.playSound(file, loop);
         },
 
         stopSound: function (id) {

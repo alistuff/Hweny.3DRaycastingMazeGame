@@ -4,17 +4,61 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>Raycasting programming by hwl</title>
+    <title>3DRaycastingMazeGame by hwl</title>
+    <style>
+        #progressbar{
+            color:red;
+            font-size:large;
+        }
+    </style>
 </head>
 <body>
     <canvas id="canvas" width="480" height="320">
         你的浏览器版本太低，不支持HTML5，请升级浏览器到最新版本然后重新运行!
     </canvas>
-    <p><span id="progressbar"></span></p>
-    <p> 伪3D恐怖迷宫探险游戏v1.0</p>
+    <p><span id="progressbar">准备加载资源请等待....</span></p>
+    <p> HTML5伪3D恐怖迷宫探险游戏v1.0</p>
     <p style="width:480px;;line-height:250%">玩家的目标是帮助神经病走出困境，胆小慎玩。当前只有一个关卡，而且玩家可以交互的东西比较少，以后会更新其他内容。</p>
     <p> 操作：WASD + 鼠标</p>
     <p> 作者：alistuff#163.com (#->@)</p>
+
+    <!--preload sounds-->
+    <audio id="Doll Dancing" preload="auto">
+        <source src="res/snd/Doll Dancing.ogg" type="audio/ogg">
+        <source src="res/snd/Doll Dancing.mp3" type="audio/mp3">
+    </audio>
+    <audio id="Dungeon Ambient" preload="auto">
+        <source src="res/snd/Dungeon Ambient.ogg" type="audio/ogg">
+        <source src="res/snd/Dungeon Ambient.mp3" type="audio/mp3">
+    </audio>
+    <audio id="Evil Chanting" preload="auto">
+        <source src="res/snd/Evil Chanting.ogg" type="audio/ogg">
+        <source src="res/snd/Evil Chanting.mp3" type="audio/mp3">
+    </audio>
+    <audio id="Dark Long Hits" preload="auto">
+        <source src="res/snd/Dark Long Hits.ogg" type="audio/ogg">
+        <source src="res/snd/Dark Long Hits.mp3" type="audio/mp3">
+    </audio>
+    <audio id="Horror Ambient" preload="auto">
+        <source src="res/snd/Horror Ambient.ogg" type="audio/ogg">
+        <source src="res/snd/Horror Ambient.mp3" type="audio/mp3">
+    </audio>
+    <audio id="Horror Ambient" preload="auto">
+        <source src="res/snd/Horror Ambient.ogg" type="audio/ogg">
+        <source src="res/snd/Horror Ambient.mp3" type="audio/mp3">
+    </audio>
+    <audio id="Zombie Pain" preload="auto">
+        <source src="res/snd/Zombie Pain.ogg" type="audio/ogg">
+        <source src="res/snd/Zombie Pain.mp3" type="audio/mp3">
+    </audio>
+    <audio id="Think Different" preload="auto">
+        <source src="res/snd/Think Different.ogg" type="audio/ogg">
+        <source src="res/snd/Think Different.mp3" type="audio/mp3">
+    </audio>
+    <audio id="So You Code" preload="auto">
+        <source src="res/snd/So You Code.ogg" type="audio/ogg">
+        <source src="res/snd/So You Code.mp3" type="audio/mp3">
+    </audio>
 
     <script src="src/alistuff_namespace.js"></script>
     <script src="src/alistuff_animation.js"></script>

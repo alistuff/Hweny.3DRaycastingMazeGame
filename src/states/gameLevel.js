@@ -97,8 +97,9 @@
         nextLevel: function () { },
 
         playSound: function (file, loop) {
-            var url = 'res/snd/' + file + (this.game.canPlayOgg() ? '.ogg' : '.mp3');
-            return this.game.playSound(url, loop);
+            //var url = 'res/snd/' + file + (this.game.canPlayOgg() ? '.ogg' : '.mp3');
+            //return this.game.playSound(url, loop);
+            return this.game.playSound(file, loop);
         },
 
         stopSound: function (audio) {
@@ -502,7 +503,7 @@
                 this.stage.addActor(titleActor);
             }
 
-            this.playSound();
+            this.game.playSound('So You Code');
         },
 
         end: function (game) { },
@@ -540,16 +541,6 @@
                 context.fillText(actor.text, actor.x, actor.y);
                 context.restore()
             };
-        },
-
-        playSound: function () {
-            if (this.game.canPlayOgg()) {
-                this.game.playSound('res/snd/So You Code.ogg');
-                console.log('ogg');
-            } else {
-                this.game.playSound('res/snd/So You Code.mp3');
-                console.log('mp3');
-            }
         },
     });
 

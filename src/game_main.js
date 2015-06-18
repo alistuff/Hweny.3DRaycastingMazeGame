@@ -7,7 +7,7 @@
 
     function game_run(result) {
         if (result) {
-            document.getElementById('progressbar').innerText = '';
+            document.getElementById('progressbar').innerHTML = '';
             game.start();
         } else {
             alert('load resources failed');
@@ -77,7 +77,7 @@
     game.queueImage('outsideLevel', 'res/level/outsideLevel.png');
 
     game.loadImages(game_run, function (e) {
-        document.getElementById('progressbar').innerText = 'loading:' + e + '%';
+        document.getElementById('progressbar').innerHTML = 'loading:' + e + '%';
     });
 
     game.init = game_init;
