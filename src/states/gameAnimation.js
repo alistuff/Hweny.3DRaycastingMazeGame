@@ -259,7 +259,7 @@
         playClip1: function () {
             this.stage = new animation.Stage();
             this.stage
-            .addActor(new animation.TextActor('《自从得了神经病  整个人精神多了》', renderer_dynamicText, 60, 160, 0, 0, 0, 0)
+            .addActor(new animation.TextActor('《自从得了精神病  整个人精神多了》', renderer_dynamicText, 60, 160, 0, 0, 0, 0)
             .addAnimation(1, 3, new animation.TextAnimation(animation.TEXT_ANIMATION_NORMAL))
             .addAnimation(1, 3, new animation.AlphaAnimation(1))
             .addAnimation(3, 5, new animation.AlphaAnimation(-1)))
@@ -373,7 +373,7 @@
             .addAnimation(169, 172, new animation.AlphaAnimation(1))
             .addAnimation(168, 169, new animation.TranslateAnimation(-50, 0))
             .addAnimation(186, 188, new animation.AlphaAnimation(-1)))
-            .addActor(new animation.TextActor('我得了神经病', renderer_text20px, 260, 150, 0, 0, 0, 0)
+            .addActor(new animation.TextActor('我得了精神病', renderer_text20px, 260, 150, 0, 0, 0, 0)
             .addAnimation(70, 78, new animation.EmptyAnimation())
             .addAnimation(71, 73, new animation.AlphaAnimation(1))
             .addAnimation(74, 76, new animation.AlphaAnimation(-1)))
